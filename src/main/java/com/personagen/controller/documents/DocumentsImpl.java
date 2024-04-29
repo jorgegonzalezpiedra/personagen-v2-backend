@@ -1,6 +1,6 @@
 package com.personagen.controller.documents;
 
-import com.personagen.model.Nif;
+import com.personagen.model.documents.Nif;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,7 @@ public class DocumentsImpl implements IDocuments{
 
     @GetMapping(value = "/nif")
     public ResponseEntity<Nif> getNif(){
-        return new ResponseEntity<>(new Nif("123123123"), HttpStatus.OK);
+        return new ResponseEntity<>(new Nif(), HttpStatus.OK);
     }
 }
 

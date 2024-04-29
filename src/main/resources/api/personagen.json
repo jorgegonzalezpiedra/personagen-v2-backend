@@ -326,7 +326,7 @@
                 "schema": {
                   "type": "array",
                   "items":{
-                    "$ref": "#/components/schemas/Cards"
+                    "$ref": "#/components/schemas/Card"
                   }
                 }
               }
