@@ -110,7 +110,7 @@ public class DocumentsServiceImpl  implements  IDocumentsService{
             controlDigit = String.valueOf((char) ('A' + random.nextInt(26)));
         }else{
             controlDigit = String.valueOf(random.nextInt(10));
-            documentNumberString.append(formattedCorrelativeNumber);
+            documentNumberString.append(controlDigit);
         }
         cif.setControlDigit(controlDigit);
         documentString.append(controlDigit);
