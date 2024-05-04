@@ -14,9 +14,9 @@ El objetivo de **Personagen** es ayudar con la tarea de pruebas, creando documen
 El acceso a **Personagen** es completamente público y gratuito.
 
 ## Tecnologias
-[![Java](https://img.shields.io/badge/Java-F77800?style=for-the-badge&logo=oracle&logoColor=white&labelColor=101010)]()
-[![Spring](https://img.shields.io/badge/Spring-2CC40A?style=for-the-badge&logo=spring&logoColor=white&labelColor=101010)]()
-[![Docker](https://img.shields.io/badge/Docker-0036FF?style=for-the-badge&logo=docker&logoColor=white&labelColor=101010)]()
+![](<https://badgewind.vercel.app/api/-Java?badgeStyle=rounded-full&leftStyle=rounded-full&rightStyle=bg-transparent|font-black|w-12&icon=simple-icons:java&iconStyle=text-(@F77800)|w-5|h-5>)
+![](<https://badgewind.vercel.app/api/-Spring?badgeStyle=rounded-full&leftStyle=rounded-full&rightStyle=bg-transparent|font-black|w-14&icon=simple-icons:spring&iconStyle=text-(@2CC40A)|w-5|h-5>)
+![](<https://badgewind.vercel.app/api/-Docker?badgeStyle=rounded-full&leftStyle=rounded-full&rightStyle=bg-transparent|font-black|w-16&icon=simple-icons:docker&iconStyle=text-(@3FADFF)|w-5|h-5>)
 
 ## Contribuciones
 Cualquier contribución al proyecto será bien recibida 😄
