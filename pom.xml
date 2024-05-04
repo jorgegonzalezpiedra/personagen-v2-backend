@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.personagen</groupId>
 	<artifactId>personagen</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>personagen</name>
 	<description>API for random data generation</description>
 	<properties>
