@@ -6,7 +6,7 @@ import org.springframework.security.core.Authentication;
 
 public class AuthenticationService{
 
-    private static final String AUTH_TOKEN_HEADER_NAME = "X-API-KEY";
+    private static final String AUTH_TOKEN_HEADER_NAME = "api-key";
     private static final String AUTH_TOKEN = "PersonagenReact";
 
     public static Authentication getAuthentication(HttpServletRequest request) throws Exception {
@@ -14,7 +14,7 @@ public class AuthenticationService{
 
         //TODO implements DB validation based
         if (apiKey == null || !apiKey.equals(AUTH_TOKEN)) {
-            throw new Exception();
+            throw new Exception("El parámetro api-key indicado en la cabecera no contiene una clave válida");
         }
 
         return new ApiKeyAuthentication(apiKey, AuthorityUtils.NO_AUTHORITIES);
