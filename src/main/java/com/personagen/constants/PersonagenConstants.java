@@ -5,6 +5,12 @@ import java.util.List;
 import java.util.Map;
 
 public class PersonagenConstants {
+
+    public static final List<String> SWAGGER_ENDPOINTS = List.of("/swagger-ui/index.html",
+            "/swagger-ui/swagger-ui.css", "/swagger-ui/swagger-ui-bundle.js",
+            "/swagger-ui/swagger-ui-standalone-preset.js", "/swagger-ui/swagger-initializer.js",
+            "/swagger-ui/favicon-32x32.png", "/swagger-ui/favicon-32x32.png",
+            "/swagger-ui/favicon-16x16.png", "/swagger-ui.html", "/v3/api-docs/swagger-config", "/v3/api-docs");
     public static final Map<String, String> SOCIETY_TYPES_CIF_MAP;
 
     static {
@@ -158,6 +164,5 @@ public class PersonagenConstants {
         LETTERS_MODULE_MAP.put(20, "C");
         LETTERS_MODULE_MAP.put(21, "K");
         LETTERS_MODULE_MAP.put(22, "E");
-
     }
 }

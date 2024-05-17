@@ -1,5 +1,6 @@
 package com.personagen.auth;
 
+import com.personagen.constants.PersonagenConstants;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,12 +15,6 @@ import java.io.PrintWriter;
 import java.util.List;
 
 public class AuthenticationFilter extends OncePerRequestFilter {
-
-    List<String> listSwaggerEndopints = List.of("/swagger-ui/index.html", "/swagger-ui/swagger-ui.css", "/swagger-ui/swagger-ui-bundle.js",
-            "/swagger-ui/swagger-ui-standalone-preset.js", "/swagger-ui/swagger-initializer.js",
-            "/swagger-ui/favicon-32x32.png", "/swagger-ui/favicon-32x32.png",
-            "/swagger-ui/favicon-16x16.png", "/swagger-ui.html", "/v3/api-docs/swagger-config", "/v3/api-docs");
-
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         try {
@@ -40,7 +35,7 @@ public class AuthenticationFilter extends OncePerRequestFilter {
     protected boolean shouldNotFilter(HttpServletRequest request)
             throws ServletException {
 
-        return listSwaggerEndopints.stream().anyMatch(endpoint -> endpoint.equals(request.getRequestURI()));
+        return PersonagenConstants.SWAGGER_ENDPOINTS.stream().anyMatch(endpoint -> endpoint.equals(request.getRequestURI()));
 
     }
 }
