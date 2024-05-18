@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/documents")
 @CrossOrigin
-public class DocumentsImpl implements IDocuments{
+public class DocumentsController {
 
     @Autowired
     IDocumentsService iDocumentsService;

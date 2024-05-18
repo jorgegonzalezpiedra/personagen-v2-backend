@@ -16,16 +16,10 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class Cif extends Document{
-
     private String orgTypeCode;
-
     private String orgType;
-
     private String provinceCode;
-
     private String province;
-
     private String correlativeNumber;
-
     private String controlDigit;
 }

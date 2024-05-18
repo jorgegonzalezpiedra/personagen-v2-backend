@@ -21,6 +21,5 @@ import lombok.EqualsAndHashCode;
 public class Nie extends Document{
 
     private String firstLetter;
-
     private String lastLetter;
 }

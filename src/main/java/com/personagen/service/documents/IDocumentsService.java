@@ -6,11 +6,11 @@ import com.personagen.model.documents.Nif;
 
 public interface IDocumentsService {
 
-    public Nif generateNif();
+    Nif generateNif();
 
-    public Nie generateNie();
+    Nie generateNie();
 
-    public Cif generateCif();
+    Cif generateCif();
 
 
 }
