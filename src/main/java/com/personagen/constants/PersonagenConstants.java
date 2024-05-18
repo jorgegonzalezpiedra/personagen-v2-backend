@@ -10,7 +10,8 @@ public class PersonagenConstants {
             "/swagger-ui/swagger-ui.css", "/swagger-ui/swagger-ui-bundle.js",
             "/swagger-ui/swagger-ui-standalone-preset.js", "/swagger-ui/swagger-initializer.js",
             "/swagger-ui/favicon-32x32.png", "/swagger-ui/favicon-32x32.png",
-            "/swagger-ui/favicon-16x16.png", "/swagger-ui.html", "/v3/api-docs/swagger-config", "/v3/api-docs");
+            "/swagger-ui/favicon-16x16.png", "/swagger-ui.html", "/v3/api-docs/swagger-config", "/v3/api-docs",
+            "/swagger-ui/index.css");
     public static final Map<String, String> SOCIETY_TYPES_CIF_MAP;
 
     static {
