@@ -5,7 +5,9 @@ Esto es la parte **Backend** de **Personagen**.
 Una API Rest creada para dar soporte a la parte front de la aplicación. 
 
 ## Documentacion
-*TO-DO*
+Puedes revisar la documentacionde la api [aquí](https://personagen.fly.dev/swagger-ui/index.html#/).
+
+Esta documentación ha sido autogenerada con la libreria springdoc-openapi v2.5.0
 
 ## Casos de uso
 El objetivo de **Personagen** es ayudar con la tarea de pruebas, creando documentos e información válida y completamente aleatoria (Ninguno de los datos generados pertenecen a ninguna entidad física o jurídica real)
