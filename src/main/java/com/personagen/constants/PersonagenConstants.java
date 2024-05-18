@@ -12,6 +12,10 @@ public class PersonagenConstants {
             "/swagger-ui/favicon-32x32.png", "/swagger-ui/favicon-32x32.png",
             "/swagger-ui/favicon-16x16.png", "/swagger-ui.html", "/v3/api-docs/swagger-config", "/v3/api-docs",
             "/swagger-ui/index.css");
+
+    public static final String[] SEPARATOR_CHARS = {"_", "-", "."};
+    public static final String[] EMAIL_DOMAINS = {"@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.es", "@icloud.com"};
+
     public static final Map<String, String> SOCIETY_TYPES_CIF_MAP;
 
     static {

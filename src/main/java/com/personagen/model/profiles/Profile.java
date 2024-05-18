@@ -7,7 +7,6 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode
 public class Profile {
-    private String profileType;
     private Document document;
     private String name;
     private String phoneNumber;
