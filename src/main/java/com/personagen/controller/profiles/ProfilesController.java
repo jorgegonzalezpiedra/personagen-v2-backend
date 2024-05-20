@@ -1,5 +1,6 @@
 package com.personagen.controller.profiles;
 
+import com.deepl.api.DeepLException;
 import com.personagen.model.documents.Nif;
 import com.personagen.model.profiles.Company;
 import com.personagen.model.profiles.User;
@@ -22,8 +23,14 @@ public class ProfilesController {
 
     @GetMapping(value = "/user")
     public ResponseEntity<User> getUser(){
-        User user = iProfilesService.generateUser();
-        return new ResponseEntity<>(user, HttpStatus.OK);
+        User user = null;
+        try {
+            user = iProfilesService.generateUser();
+            return new ResponseEntity<>(user, HttpStatus.OK);
+        } catch (DeepLException | InterruptedException e) {
+            //TODO handle exception and return error
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @GetMapping(value = "/company")

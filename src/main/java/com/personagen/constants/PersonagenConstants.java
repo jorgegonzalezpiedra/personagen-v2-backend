@@ -14,7 +14,10 @@ public class PersonagenConstants {
             "/swagger-ui/index.css");
 
     public static final String[] SEPARATOR_CHARS = {"_", "-", "."};
-    public static final String[] EMAIL_DOMAINS = {"@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.es", "@icloud.com"};
+
+    public static final String[] EMAIL_DOMAINS = {"@gmail.com", "@yahoo.com", "@hotmail.com", "@outlook.es"};
+
+    public static final String[] GENDERS = {"Hombre", "Mujer", "No binario"};
 
     public static final Map<String, String> SOCIETY_TYPES_CIF_MAP;
 

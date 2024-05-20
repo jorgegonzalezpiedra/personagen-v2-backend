@@ -30,4 +30,5 @@ public class UserDataBuilder {
         String randomEmailDomain = PersonagenConstants.EMAIL_DOMAINS[(int) (Math.random() * PersonagenConstants.EMAIL_DOMAINS.length)];
         return (firstName + randomSeparator + lastName1 + randomEmailDomain).replace(" ", "").trim().toLowerCase();
     }
+
 }
