@@ -2,9 +2,7 @@ package com.personagen.utils;
 
 import com.personagen.constants.PersonagenConstants;
 
-import java.util.Arrays;
-
-public class UserDataBuilder {
+public class ProfileDataBuilder {
 
     /**
      * Build a username using random separators and the first and last names
@@ -21,14 +19,21 @@ public class UserDataBuilder {
 
     /**
      * Builds an email address using random separators and random domain name
-     * @param firstName {@link String}
-     * @param lastName1 {@link String}
+     * @param name {@link String}
+     * @param lastName1 {@link String} in case of a user profile
      * @return String
      */
-    public static String buildEmailAddress(String firstName, String lastName1) {
+    public static String buildEmailAddress(String name, String lastName1) {
+        StringBuilder sbEmail = new StringBuilder();
+
         String randomSeparator = PersonagenConstants.SEPARATOR_CHARS[(int) (Math.random() * PersonagenConstants.SEPARATOR_CHARS.length)];
         String randomEmailDomain = PersonagenConstants.EMAIL_DOMAINS[(int) (Math.random() * PersonagenConstants.EMAIL_DOMAINS.length)];
-        return (firstName + randomSeparator + lastName1 + randomEmailDomain).replace(" ", "").trim().toLowerCase();
+
+        sbEmail.append(name);
+        if(!lastName1.isEmpty()) sbEmail.append(randomSeparator).append(lastName1);
+        sbEmail.append(randomEmailDomain);
+
+        return sbEmail.toString().replace(" ", "").trim().toLowerCase();
     }
 
 }

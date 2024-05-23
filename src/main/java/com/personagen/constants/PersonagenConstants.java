@@ -19,6 +19,10 @@ public class PersonagenConstants {
 
     public static final String[] GENDERS = {"Hombre", "Mujer", "No binario"};
 
+    public static final String SL_COMPANY_ACRONYM = "S.L.";
+
+    public static final String SA_COMPANY_ACRONYM = "S.A.";
+
     public static final Map<String, String> SOCIETY_TYPES_CIF_MAP;
 
     static {
