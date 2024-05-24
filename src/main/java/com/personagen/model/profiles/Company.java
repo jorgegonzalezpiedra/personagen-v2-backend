@@ -8,4 +8,5 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = false)
 public class Company extends Profile{
     private String creationDate;
+    private String industry;
 }

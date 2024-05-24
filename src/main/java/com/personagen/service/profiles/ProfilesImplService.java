@@ -47,12 +47,12 @@ public class ProfilesImplService implements IProfilesService {
     public Company generateCompany() {
 
         Company company = new Company();
-
         company.setDocument(iDocumentsService.generateCif());
         company.setName(dataFaker.company().name()
                 .replace(PersonagenConstants.SL_COMPANY_ACRONYM, "")
                 .replace(PersonagenConstants.SA_COMPANY_ACRONYM, "")
                 .trim());
+        company.setIndustry(dataFaker.company().industry());
         company.setCreationDate(dataFaker.date().birthday("dd/MM/yyyy"));
         company.setEmail(ProfileDataBuilder.buildEmailAddress(company.getName().replace(",", ""), ""));
         company.setPhoneNumber(dataFaker.phoneNumber().cellPhone()
