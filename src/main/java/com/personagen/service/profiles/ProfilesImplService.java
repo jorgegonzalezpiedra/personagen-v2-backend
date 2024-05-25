@@ -1,6 +1,6 @@
 package com.personagen.service.profiles;
 
-import com.deepl.api.DeepLException;
+
 import com.personagen.constants.PersonagenConstants;
 import com.personagen.model.profiles.Company;
 import com.personagen.model.profiles.User;

@@ -25,8 +25,8 @@ public class DocumentsServiceImpl  implements  IDocumentsService{
 
         //Number
         int nifNumber = 10000000 + random.nextInt(90000000);
-        documentString.append(Integer.toString(nifNumber));
-        documentNumberString.append(Integer.toString(nifNumber));
+        documentString.append(nifNumber);
+        documentNumberString.append(nifNumber);
 
         //Letter
         int fullNifNumberModule = nifNumber % 23;
@@ -60,7 +60,7 @@ public class DocumentsServiceImpl  implements  IDocumentsService{
         documentNumberString.append(nieNumber);
 
         //Last letter
-        int fullNieNumber = Integer.parseInt(PersonagenConstants.FIRST_LETTERS_NIE_MAP.get(nieFirstLetter).toString() + nieNumber.toString());
+        int fullNieNumber = Integer.parseInt(PersonagenConstants.FIRST_LETTERS_NIE_MAP.get(nieFirstLetter).toString() + nieNumber);
         Integer fullNieNumberModule = fullNieNumber % 23;
         String lastLetterNie = PersonagenConstants.LETTERS_MODULE_MAP.get(fullNieNumberModule);
         nie.setLastLetter(lastLetterNie);
@@ -104,7 +104,7 @@ public class DocumentsServiceImpl  implements  IDocumentsService{
         documentNumberString.append(formattedCorrelativeNumber);
 
         //Control digit
-        String controlDigit = "";
+        String controlDigit;
         List<String> listForLetter = List.of("K", "P", "Q", "S");
         if(listForLetter.contains(orgTypeCode)){
             controlDigit = String.valueOf((char) ('A' + random.nextInt(26)));
