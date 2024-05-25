@@ -6,7 +6,7 @@ import com.personagen.model.profiles.User;
 
 public interface IProfilesService {
 
-    User generateUser() throws DeepLException, InterruptedException;
+    User generateUser();
 
     Company generateCompany();
 }

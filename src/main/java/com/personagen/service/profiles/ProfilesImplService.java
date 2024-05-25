@@ -22,7 +22,7 @@ public class ProfilesImplService implements IProfilesService {
     Faker dataFaker = new Faker(new Locale("es"));
 
     @Override
-    public User generateUser() throws DeepLException, InterruptedException {
+    public User generateUser(){
 
         User user = new User();
 
