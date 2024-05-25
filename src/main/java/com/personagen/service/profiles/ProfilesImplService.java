@@ -26,7 +26,7 @@ public class ProfilesImplService implements IProfilesService {
 
         User user = new User();
 
-        user.setDocument(iDocumentsService.generateNif());//TODO generate nif or nie randomly
+        user.setDocument(iDocumentsService.generateNif());
         user.setGender(PersonagenConstants.GENDERS[(int) (Math.random() * PersonagenConstants.GENDERS.length)]);
         user.setName(dataFaker.name().firstName());
         user.setLastName1(dataFaker.name().lastName());
