@@ -2,6 +2,8 @@ package com.personagen.utils;
 
 import com.personagen.constants.PersonagenConstants;
 
+import java.text.Normalizer;
+
 public class ProfileDataBuilder {
 
     /**
@@ -33,7 +35,10 @@ public class ProfileDataBuilder {
         if(!lastName1.isEmpty()) sbEmail.append(randomSeparator).append(lastName1);
         sbEmail.append(randomEmailDomain);
 
-        return sbEmail.toString().replace(" ", "").trim().toLowerCase();
+        return Normalizer.normalize(sbEmail.toString(), Normalizer.Form.NFD)
+                .replaceAll("[\\p{InCombiningDiacriticalMarks}]", "")
+                .replace(" ", "")
+                .toLowerCase();
     }
 
 }
